@@ -53,7 +53,7 @@ public class PlayButtonDrawer : MonoBehaviour
                 order = new int[] { 3, 1, 2, 4 };
                 break;
 
-            case 4:
+            case 3:
                 //Set Order for Teams
                 order = new int[] { 4, 1, 2, 3 };
                 break;
@@ -94,7 +94,8 @@ public class PlayButtonDrawer : MonoBehaviour
         //Get the index of order for the postion entered
         selectedPosition = order[position];
 
-        SwitchOrderSet(position);
+        SwitchOrderSet(order[position] - 1);
+        // SwitchOrderSet(position);
 
         ModeSelect(selectedPosition);
 
