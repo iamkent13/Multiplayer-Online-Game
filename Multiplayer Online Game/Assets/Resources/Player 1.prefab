@@ -1643,10 +1643,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77801bb20f5484173ace12c26adf0cdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.2
+  speed: 1
+  jump: 5
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 65
+  airFriction: 0.5
   anim: {fileID: 5149811001173593048}
-  gravitySmooth: 0.015
   playerObj: {fileID: 1926944237429040626}
+  groundCheck: {fileID: 1294276091971764040}
 --- !u!143 &688439965861661026
 CharacterController:
   m_ObjectHideFlags: 0

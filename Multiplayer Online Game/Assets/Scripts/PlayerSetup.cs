@@ -15,8 +15,8 @@ public class PlayerSetup : MonoBehaviourPunCallbacks, IPunObservable
     #region UNITY METHODS
     void Start()
     {
-        //PhotonNetwork.SerializationRate = 8;
-        //PhotonNetwork.SendRate = 10;
+        PhotonNetwork.SerializationRate = 120;
+        PhotonNetwork.SendRate = 60;
 
         var isLocalPlayer = photonView.IsMine;
 

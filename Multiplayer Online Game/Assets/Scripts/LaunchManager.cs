@@ -132,7 +132,7 @@ public class LaunchManager : MonoBehaviourPunCallbacks
         Debug.Log("Created " + PhotonNetwork.CurrentRoom.Name);
 
         //This will be our created room after clicking the button
-        Matchmaking.instance.CreateRoomOnClick();
+        // Matchmaking.instance.CreateRoomOnClick();
     }
     public override void OnPlayerEnteredRoom(Player newPlayer)
     {
